@@ -22,13 +22,18 @@
 					<div class="project-meta">
 						<span class="h2">Technologies</span>
 						<p>{{ page.project.tech }}</p>
+						{% if page.agency %}
 						<span class="h2">Agency</span>
 						<p><a title="{{ page.agency.title }}" href="{{ page.agency.url }}" target="_blank" rel="nofollow">{{ page.agency.title }}</a></p>
+						{% endif %}
 						<span class="h2">Year</span>
-						<p>{{ page.agency.year }}</p>
+						<p>{{ page.project.year }}</p>
 					</div>
 				</article>
 				<aside>
+					{% if page.video %}
+						<iframe width="100%" height="500" src="{{ page.video.url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					{% endif %}
 					<ul>
 						{% for image in page.images %}
 						<li>
@@ -48,6 +53,12 @@
 				</a>
 				{% endif %}
 				{% if page.next and page.next.categories contains "projects" %}
+				{% unless page.previous and page.previous.categories contains "projects" %}
+				<a>
+					<span class="h2"></span>
+					<h2></h2>
+				</a>
+				{% endunless %}
 				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
 					<span class="h2">Next</span>
 					<h2>{{ page.next.project.title }}</h2>

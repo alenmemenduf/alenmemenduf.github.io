@@ -1,12 +1,20 @@
 # User config
 author: "Alen Memenduf"
-tagline: "Pineapple Certfied Jekyll Theme"
-description: "In 1493, explorer Christopher Columbus found pineapples on Guadeloupe Island in the Caribbean. Pineapple on pizza soon followed..."
-keywords: "Pineapple, Pineapple Pizza, Pineapple House"
-email: "pineapple@example.com"
-linkedin: "https://www.linkedin.com/"
-twitter: "https://twitter.com/"
-github: "https://github.com/"
+description: |
+  Hi, my name is Alen. 
+
+  I'm a 3rd year student at 
+  Faculty of Mathematics and Informatics, University of Bucharest. 
+  
+  I'm fascinated by almost everything on a computer. 
+  I like video games, programming and things that look good,
+  so most of the time I'm doing a subset of these 3.
+keywords: "Alen Memenduf, Game Programmer, Software Developer, Rendering Programmer"
+email: "alenmemenduf@gmail.com"
+linkedin: "https://www.linkedin.com/in/alen-memenduf"
+github: "https://github.com/alenmemenduf"
+itch_io: "https://alenmemenduf.itch.io"
+shadertoy: "https://www.shadertoy.com/user/alenmemenduf"
 
 # Site config
 baseurl: ""

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.author }} / {{ site.tagline }}</title>
+	<title>{{ site.author }}'s Portfolio</title>
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ site.description }}">
 	<meta name="keywords" content="{{ site.keywords }}">
@@ -15,14 +15,14 @@
 		<section class="intro">
 			<div class="container">
 				<h2>About me.</h2>
-				<p>{{ site.description }}</p>
+				<pre>{{ site.description }}</pre>
 			</div>
 		</section>
 		<section class="projects">
 			<div class="container">
 				<h2>Projects I have worked on.</h2>
 				<ul class="projects-list">
-					{% for item in site.categories.projects reversed %}
+					{% for item in site.categories.projects %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
