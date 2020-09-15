@@ -12,7 +12,7 @@ project:
   url: "https://github.com/arnolds/pineapple"
   logo: "/assets/images/projects/redpineapple/logo.png"
   tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
-  year: "2017"
+  date: "2017"
 
 #agency:
 #  title: "Red Pineapple Co"
